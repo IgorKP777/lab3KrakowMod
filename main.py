@@ -13,8 +13,8 @@ if __name__ == '__main__':
 
     below = 0
     for i in range(n):
-        x = (r.uniform(xMin, xMax))
-        y = (r.uniform(yMin, yMax))
+        x = r.uniform(xMin, xMax)
+        y = r.uniform(yMin, yMax)
         if y <= (x ** 2) * (m.e ** (-1.5 * x)):
             below += 1
 
