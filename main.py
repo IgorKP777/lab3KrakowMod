@@ -11,13 +11,11 @@ if __name__ == '__main__':
 
     s = (xMax - xMin) * (yMax - yMin)
 
-    xList =[]
-    yList =[]
     below = 0
     for i in range(n):
-        xList.append(r.uniform(xMin, xMax))
-        yList.append(r.uniform(yMin, yMax))
-        if yList[i] <= (xList[i] ** 2) * (m.e ** (-1.5 * xList[i])):
+        x = (r.uniform(xMin, xMax))
+        y = (r.uniform(yMin, yMax))
+        if y <= (x ** 2) * (m.e ** (-1.5 * x)):
             below += 1
 
     evaluationOfTheIntegral = below / n * s
