@@ -4,10 +4,7 @@ import random as r
 if __name__ == '__main__':
 
     n = 1000
-    xMin = 1
-    xMax = 4
-    yMin = 0
-    yMax = 0.25
+    xMin, xMax, yMin, yMax = 1, 4, 0, 0.25
 
     s = (xMax - xMin) * (yMax - yMin)
 
