@@ -17,3 +17,5 @@ if __name__ == '__main__':
 
     evaluationOfTheIntegral = below / n * s
     print('I =', round(number=evaluationOfTheIntegral, ndigits=4))
+
+# comment
