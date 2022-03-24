@@ -1,9 +1,12 @@
 import math as m
 import random as r
+import art
 
-if __name__ == '__main__':
+n = 1000
 
-    n = 1000
+
+def integral_1():
+
     xMin, xMax, yMin, yMax = 1, 4, 0, 0.25
 
     s = (xMax - xMin) * (yMax - yMin)
@@ -16,6 +19,32 @@ if __name__ == '__main__':
             below += 1
 
     evaluationOfTheIntegral = below / n * s
-    print('I =', round(number=evaluationOfTheIntegral, ndigits=4))
+    print(art.text2art('I = ' + str(round(number=evaluationOfTheIntegral, ndigits=4)), 'block'))
 
-# comment
+
+def integral_2():
+    pass
+
+
+def integral_3():
+    pass
+
+
+if __name__ == '__main__':
+    integral_number = int()
+    try:
+        integral_number = int(input('введите номер интеграла '))
+    except ValueError:
+        print('введите число')
+        exit(-2)
+
+    if 1 <= integral_number <= 3:
+        if integral_number == 1:
+            integral_1()
+        if integral_number == 2:
+            integral_2()
+        if integral_number == 3:
+            integral_3()
+    else:
+        print('введите номер интегралла от 1 до 3')
+    pass
