@@ -2,7 +2,7 @@ import graph_integral
 import integral
 import art
 
-integral_number = int()
+integral_number = int
 try:
     integral_number = int(input('введите номер интеграла '))
 except ValueError:
