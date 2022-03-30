@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import integral
+import main
 
-n = integral.n
-a = 1
-b = 4
+n = main.n
+a = main.a
+b = main.b
 
 
 def graph_1():

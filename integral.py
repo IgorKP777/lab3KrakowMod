@@ -1,14 +1,15 @@
-#
+#метод Монте-Карло
 
 import math
 import random
 
-n = 1000
+import main
+
+n = main.n
+xMin, xMax, yMin, yMax = main.a, main.b, 0, 0.25
 
 
 def integral_1() -> float:
-
-    xMin, xMax, yMin, yMax = 1, 4, 0, 0.25
     s = (xMax - xMin) * (yMax - yMin)
     below = 0
     for i in range(n):
@@ -21,8 +22,6 @@ def integral_1() -> float:
 
 
 def integral_2() -> float:
-
-    xMin, xMax, yMin, yMax = 1, 4, 0, 0.2
     s = (xMax - xMin) * (yMax - yMin)
     below = 0
     for i in range(n):
@@ -35,7 +34,6 @@ def integral_2() -> float:
 
 
 def integral_3() -> float:
-    xMin, xMax, yMin, yMax = 1, 4, 0, 0.15
     s = (xMax - xMin) * (yMax - yMin)
     below = 0
     for i in range(n):

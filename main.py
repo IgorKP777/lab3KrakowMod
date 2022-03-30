@@ -1,10 +1,13 @@
 from prettytable import PrettyTable
-import graph_integral
 import indicative
 import integral
-import art
 import primitive
+import rectangle
 import trapezoid
+
+a = 1
+b = 4
+n = 10000
 
 table = PrettyTable()
 table.title = 'Численное интегрирование'
@@ -27,17 +30,18 @@ if 1 <= integral_number <= 3:
         table.add_row([indicative.indicative_1()[0], indicative.indicative_1()[1]])
         table.add_row([trapezoid.trapezoid_1()[0], trapezoid.trapezoid_1()[1]])
         table.add_row(['Метод Монте-Карло', round(number=i, ndigits=4)])
+        table.add_row([rectangle.rectangle_1()[0], rectangle.rectangle_1()[1]])
         # graph_integral.graph_1()
     if integral_number == 2:
         i = intgrl.integral_2()
         # print(art.text2art('I = ' + str(round(number=i, ndigits=4)), 'block'))
         print('I = ' + str(round(number=i, ndigits=4)))
-        graph_integral.graph_2()
+        # graph_integral.graph_2()
     if integral_number == 3:
         i = intgrl.integral_3()
         # print(art.text2art('I = ' + str(round(number=i, ndigits=4)), 'block'))
         print('I = ' + str(round(number=i, ndigits=4)))
-        graph_integral.graph_3()
+        # graph_integral.graph_3()
     print(table)
 else:
     print('введите номер интегралла от 1 до 3')

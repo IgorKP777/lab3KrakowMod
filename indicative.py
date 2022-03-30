@@ -3,9 +3,12 @@
 import random
 import numpy
 
+import main
+
+n = main.n
+
 
 def indicative_1():
-    n = 10000
     lt = list()
     for i in range(n):
         x = -numpy.log(random.uniform(0, 1)) / 1.5

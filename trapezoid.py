@@ -1,11 +1,13 @@
-#метод трапеций
+# метод трапеций
 
 import numpy as np
 
+import main
+
 
 def trapezoid_1():
-    a = 1
-    b = 4
+    a = main.a
+    b = main.b
     n = 50
     h = (b - a) / n
 
