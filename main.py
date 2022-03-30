@@ -1,3 +1,5 @@
+from prettytable import PrettyTable
+
 import graph_integral
 import integral
 import art
@@ -8,6 +10,11 @@ try:
 except ValueError:
     print('введите число')
     exit(-2)
+
+table = PrettyTable()
+table.title = 'Результаты'
+table.field_names = ['Способ решения', '123']
+print(table)
 
 intgrl = integral
 i = float

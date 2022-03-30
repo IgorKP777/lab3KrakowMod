@@ -1,5 +1,5 @@
+# Монте-Карло (показательный)
 import random
-
 import numpy
 
 n = 10000
@@ -11,5 +11,3 @@ for i in range(n):
         lt.append((x ** 2) / 1.5)
 
 print(round(sum(lt) / n, 4))
-
-l = lambda a: [x for i in range(n) ]
