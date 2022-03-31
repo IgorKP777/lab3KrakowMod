@@ -20,28 +20,31 @@ except ValueError:
     print('введите число')
     exit(-2)
 
-intgrl = integral
 i = float
 if 1 <= integral_number <= 3:
     if integral_number == 1:
-        i = intgrl.integral_1()
-        # print(art.text2art(text='I = ' + str(round(number=i, ndigits=4)), font='block'))
         table.add_row([primitive.primitive_1()[0], primitive.primitive_1()[1]])
         table.add_row([indicative.indicative_1()[0], indicative.indicative_1()[1]])
         table.add_row([trapezoid.trapezoid_1()[0], trapezoid.trapezoid_1()[1]])
-        table.add_row(['Метод Монте-Карло', round(number=i, ndigits=4)])
+        table.add_row([integral.integral_1()[0], integral.integral_1()[1]])
         table.add_row([rectangle.rectangle_1()[0], rectangle.rectangle_1()[1]])
         # graph_integral.graph_1()
     if integral_number == 2:
-        i = intgrl.integral_2()
-        # print(art.text2art('I = ' + str(round(number=i, ndigits=4)), 'block'))
-        print('I = ' + str(round(number=i, ndigits=4)))
+        table.add_row([primitive.primitive_2()[0], primitive.primitive_2()[1]])
+        # table.add_row([indicative.indicative_2()[0], indicative.indicative_2()[1]])
+        table.add_row([trapezoid.trapezoid_2()[0], trapezoid.trapezoid_2()[1]])
+        table.add_row([integral.integral_2()[0], integral.integral_2()[1]])
+        table.add_row([rectangle.rectangle_2()[0], rectangle.rectangle_2()[1]])
         # graph_integral.graph_2()
     if integral_number == 3:
-        i = intgrl.integral_3()
-        # print(art.text2art('I = ' + str(round(number=i, ndigits=4)), 'block'))
-        print('I = ' + str(round(number=i, ndigits=4)))
+        table.add_row([primitive.primitive_3()[0], primitive.primitive_3()[1]])
+        # table.add_row([indicative.indicative_2()[0], indicative.indicative_2()[1]])
+        table.add_row([trapezoid.trapezoid_3()[0], trapezoid.trapezoid_3()[1]])
+        table.add_row([integral.integral_3()[0], integral.integral_3()[1]])
+        table.add_row([rectangle.rectangle_3()[0], rectangle.rectangle_3()[1]])
         # graph_integral.graph_3()
+        pass
     print(table)
 else:
     print('введите номер интегралла от 1 до 3')
+    exit(-3)

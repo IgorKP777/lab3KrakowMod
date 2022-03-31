@@ -1,10 +1,12 @@
+# графики
+
 import numpy as np
 import matplotlib.pyplot as plt
 import main
 
-n = main.n
-a = main.a
-b = main.b
+n = 10000
+a = 1
+b = 4
 
 
 def graph_1():
