@@ -1,6 +1,4 @@
 # Монте-Карло (показательный закон)
-# min 0.4005
-# max 0.4892
 
 import random
 import numpy
@@ -33,10 +31,3 @@ def indicative_3() -> tuple[str, float]:
         if 1 <= x <= 4:
             lt.append((x ** 2) / 1.5)
     return 'Монте-Карло (показательный закон)', round(sum(lt) / n, 4)
-
-
-lt = []
-for _ in range(20000):
-    lt.append(indicative_1()[1])
-print(min(lt))
-print(max(lt))

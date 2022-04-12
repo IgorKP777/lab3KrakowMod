@@ -5,8 +5,6 @@ import primitive
 import rectangle
 import trapezoid
 
-a = 1
-b = 4
 n = 10000
 
 table = PrettyTable()
@@ -43,7 +41,6 @@ if 1 <= integral_number <= 3:
         table.add_row([integral.integral_3()[0], integral.integral_3()[1]])
         table.add_row([rectangle.rectangle_3()[0], rectangle.rectangle_3()[1]])
         # graph_integral.graph_3()
-        pass
     print(table)
 else:
     print('введите номер интегралла от 1 до 3')
