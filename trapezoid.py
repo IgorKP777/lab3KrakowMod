@@ -16,6 +16,8 @@ def trapezoid_1():
         f = (x ** 2) * (np.e ** (-1.5 * x))
         y.append(f)
 
+    first, *lt, last = y
+    trap1 = (h / 2) * (first + 2 * sum(lt) + last)
     trap = (h / 2) * (y[0] + 2 * sum(y[1:-1]) + y[-1])
     return 'Метод трапеций (узлов {})'.format(n), round(trap, 4)
 
