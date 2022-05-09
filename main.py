@@ -10,6 +10,7 @@ n = 10000
 table = PrettyTable()
 table.title = 'Численное интегрирование'
 table.field_names = ['Способ решения', 'Результат решения']
+table.align = 'l'
 
 integral_number = int
 try:
